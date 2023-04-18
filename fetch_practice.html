@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fetch 연습하고 가기!</title>
+    <title>Fetch 자전거</title>
     <!-- JQuery를 import 합니다 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -34,9 +34,9 @@
                 $('#names-q1').empty()
                 let rows = data['getStationList']['row']
                 rows.forEach(a => {
-                    let name = a['stationName']
-                    let rack = a['rackTotCnt']
-                    let bike = a['parkingBikeTotCnt']
+                    let name = a.stationName
+                    let rack = a.rackTotCnt
+                    let bike = a.parkingBikeTotCnt
 
                     let temp_html = ``
 
